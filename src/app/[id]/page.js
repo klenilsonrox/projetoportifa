@@ -41,8 +41,8 @@ buscar()
             <div className='flex text-white gap-[5px] text-[22px] ml-[10px]'><p>Meu </p> <span className='text-[#3B82F6] '>Porfólio</span></div>
             <nav className='text-white'>
                 <ul className={`flex gap-4 flex-col transition-all lg:flex-row absolute lg:static items-center top-[52px] left-0 bg-slate-800 lg:bg-[#020817] ${menu ? "h-screen":"h-[0px]"} overflow-hidden md:w-auto md:h-auto w-screen text-white`}>
-                    <li><a href="">Home</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="" onClick={()=>setMenu(false)}>Home</a></li>
+                    <li><a href="#projetos" onClick={()=>setMenu(false)}>Projetos</a></li>
                 </ul>
             </nav>
         </header>
