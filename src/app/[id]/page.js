@@ -54,10 +54,6 @@ buscar()
                 <h1 className='text-[40px] font-bold'>{info.name}</h1>
                 <div>
                    <p> Principais linguagens</p>
-                   <div className='flex gap-2'>
-                    <p>html</p>
-                    <p>css</p>
-                   </div>
                    <div className='mt-4'>
                     <a href={`https://github.com/${info.login}`} className='bg-[#3576DF] hover:bg-[#245bb3] transition-all px-4 py-2 rounded-md '>Entre em contato</a>
                     
@@ -79,6 +75,7 @@ buscar()
     {repo.map((item,index)=> <div className='border  w-screen max-w-[300px] lg:max-w-[300px] p-6 hover:border-2 transition-all hover:border-blue-600 rounded-md flex flex-col gap-2 animadown' key={index}>
         <h2 className='text-white text-[20px]'>{item.name}</h2>
         <a href={item.html_url} className='bg-[#182334] text-white mt-4 py-2 px-6 w-[130px] rounded-md' target='_blanck'>Repositório</a>
+        
     </div> )}
 </div>
 
