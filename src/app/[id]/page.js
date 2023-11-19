@@ -53,7 +53,7 @@ buscar()
                 <p className='text-gray'>Olá, eu me chamo</p>
                 <h1 className='text-[40px] font-bold'>{info.name}</h1>
                 <div>
-                   <p> Principais linguagens</p>
+
                    <div className='mt-4'>
                     <a href={`https://github.com/${info.login}`} className='bg-[#3576DF] hover:bg-[#245bb3] transition-all px-4 py-2 rounded-md '>Entre em contato</a>
                     
