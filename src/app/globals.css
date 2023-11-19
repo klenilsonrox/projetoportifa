@@ -1,3 +1,103 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+
+
+body{
+    scroll-behavior: smooth;
+}
+
+.animaleft {
+    animation: animaLeft .6s linear;
+}
+
+
+@keyframes animaLeft {
+    from{
+        transform: translate3d(-100px,0,0);
+    } to{
+        transform: translate3d(0,0,0);  
+    }
+}
+
+
+.animaRight {
+    animation: animaRight .6s linear;
+}
+
+
+@keyframes animaRight {
+    from{
+        transform: translate3d(100px,0,0);
+    } to{
+        transform: translate3d(0,0,0);  
+    }
+}
+
+
+.animadown {
+    animation: animaDown .6s linear;
+}
+
+
+@keyframes animaDown {
+    from{
+        transform: translate3d(0,-100px,0);
+    } to{
+        transform: translate3d(0,0,0);  
+    }
+}
+
+
+.hamburguer{
+    display: block;
+    border-top: 3px solid ;
+    width: 30px;
+    transition: .4s ease-in-out;
+   
+}
+
+.hamburguer::after{
+    content: "";
+    display: block;
+    margin-top: 6px;
+    height: 3px;
+    width: 20px;
+    background-color: white;
+}
+
+.hamburguer::before{
+    content: "";
+    display: block;
+    margin-top: 6px;
+    height: 3px;
+    width: 25px;
+    background-color: white;
+}
+
+.hamburguer.ativo{
+    transform: rotate(90deg);
+    border-top-color: transparent;
+}
+
+.hamburguer.ativo::after{
+    transform: rotate(135deg);
+    width: 25px;
+    margin-top:-3px
+}
+
+.hamburguer.ativo::before{
+    transform: rotate(-135deg);
+    width: 25px;
+}
+
+.btn{
+    background: none;
+    padding: 10px;
+    border:none;
+    position: absolute;
+    right: 10px;
+}
